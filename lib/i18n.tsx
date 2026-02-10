@@ -19,19 +19,22 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.faq": "FAQ",
     "nav.contact": "Contact",
     "nav.waitlist": "Join Waitlist",
-    
+
     // Hero
-    "hero.launching": "Launching Soon",
-    "hero.morocco": "Morocco's First",
-    "hero.autonomous": "Autonomous",
-    "hero.engine": "Tender Engine.",
-    "hero.desc": "SPLITGLASS extracts BPU pricing tables from PDFs to Excel in seconds. Join the waitlist to be first in line when we launch.",
-    "hero.placeholder": "Enter your email address",
-    "hero.cta": "Get early access",
+    "hero.launching": "Private Beta",
+    "hero.morocco": "Morocco's Tender",
+    "hero.autonomous": "Preflight",
+    "hero.engine": "Copilot.",
+    "hero.desc": "From CPS/BPU/DQE chaos to bid-ready intelligence: qualification checks, compliance checklist, risk flags, and clean Excel outputs.",
+    "hero.bullet1": "Built for Moroccan tender formats (PDF, DOCX, ZIP, scans)",
+    "hero.bullet2": "Audit trail and arithmetic checks",
+    "hero.bullet3": "Designed for SMEs bidding 4–15 tenders/month",
+    "hero.cta": "Request Pilot",
+    "hero.cta2": "Get Early Access",
     "hero.social": "Join 50+ construction professionals waiting for launch",
     "hero.success": "You're on the list!",
     "hero.success_desc": "Thanks for joining. We'll notify you as soon as early access opens.",
-    
+
     // UseCases
     "prob.tag": "The Problem",
     "prob.title": "System Bottlenecks Detected",
@@ -53,9 +56,10 @@ const translations: Record<Language, Record<string, string>> = {
     "feat.tag": "The Solution",
     "feat.title": "SPLITGLASS makes tender processing effortless",
     "feat.subtitle": "Automate the busywork so you can focus on winning the bid.",
-    "feat.core": "Core Technology",
+    "feat.core": "Extraction Layer",
     "feat.engine": "BP2XLS Engine",
-    "feat.engine_desc": "Our proprietary AI engine acts as the central processor for your tender documents. It identifies, extracts, and validates pricing tables from PDF to Excel in under 30 seconds.",
+    "feat.engine_sub": "(Extraction Layer)",
+    "feat.engine_desc": "Our extraction engine identifies, extracts, and validates pricing tables from PDF to Excel. It is one component of a larger Tender Intelligence workflow that includes qualification, compliance, and audit.",
     "feat.context": "Contextual Parsing",
     "feat.native": "Native Excel Output",
     "feat.discovery": "Tender Discovery",
@@ -84,16 +88,20 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Pricing
     "price.tag": "Pricing",
-    "price.title": "Launching soon with simple pricing",
-    "price.free": "Free",
-    "price.free_desc": "Perfect for testing the waters.",
+    "price.title": "Simple, outcome-based pricing",
+    "price.starter": "Starter",
+    "price.starter_desc": "Pay per tender. Ideal for occasional bidders.",
+    "price.starter_price": "From 500 MAD",
+    "price.starter_period": "/tender",
     "price.pro": "Pro",
-    "price.pro_desc": "For professionals who bid regularly.",
+    "price.pro_desc": "Monthly plan for teams bidding regularly.",
+    "price.pro_price": "1,000 – 5,000 MAD",
+    "price.pro_period": "/month",
     "price.ent": "Enterprise",
-    "price.ent_desc": "For large construction firms.",
-    "price.period": "/month",
+    "price.ent_desc": "Custom volume pricing for large firms.",
     "price.contact": "Contact us",
-    "price.cta_join": "Join Waitlist",
+    "price.cta_start": "Request Pilot",
+    "price.cta_join": "Get Early Access",
     "price.cta_contact": "Contact Sales",
 
     // Contact
@@ -123,7 +131,7 @@ const translations: Record<Language, Record<string, string>> = {
     "faq.a5": "French and Arabic documents are fully supported.",
 
     // Footer
-    "foot.desc": "Win more tenders, waste less time. Autonomous digitization for the construction industry.",
+    "foot.desc": "Tender intelligence for Moroccan construction. Qualification, compliance, extraction, and audit — in one workflow.",
     "foot.prod": "Product",
     "foot.comp": "Company",
     "foot.legal": "Legal",
@@ -131,7 +139,44 @@ const translations: Record<Language, Record<string, string>> = {
     "foot.blog": "Blog",
     "foot.terms": "Terms of Service",
     "foot.privacy": "Privacy Policy",
-    
+    "foot.startup": "Program Verification",
+    "foot.about": "SplitGlass is a Morocco-based startup building tender intelligence software for the construction industry.",
+
+    // What You Get
+    "wyg.tag": "What You Get",
+    "wyg.title": "End-to-end tender preparation",
+    "wyg.subtitle": "Four capabilities that turn raw tender documents into bid-ready intelligence.",
+    "wyg.card1_title": "Go/No-Go Fit Score",
+    "wyg.card1_desc": "Instant qualification analysis to help you decide whether a tender is worth pursuing before investing hours.",
+    "wyg.card2_title": "Compliance Checklist",
+    "wyg.card2_desc": "Automatically extract required documents, guarantees, and deadlines so nothing slips through the cracks.",
+    "wyg.card3_title": "BPU/DQE Extraction",
+    "wyg.card3_desc": "Pricing tables extracted to bid-ready Excel with column fidelity, ready for your estimating team.",
+    "wyg.card4_title": "Audit & Risk Flags",
+    "wyg.card4_desc": "Totals mismatch detection, missing line alerts, and noisy row filtering to de-risk your submission.",
+
+    // Who It's For
+    "wif.tag": "Who It's For",
+    "wif.title": "Built for Moroccan tender teams",
+    "wif.subtitle": "Whether you bid on 4 or 15 tenders a month, SplitGlass saves you hours per submission.",
+    "wif.item1": "Small & mid-size contractors",
+    "wif.item2": "Bureaux d'études",
+    "wif.item3": "Tender consultants",
+    "wif.item4": "Morocco-first, French/Arabic workflows",
+
+    // Trust / Security
+    "trust.tag": "Security",
+    "trust.title": "Security & data handling",
+    "trust.subtitle": "Your tender documents contain sensitive pricing data. We treat them accordingly.",
+    "trust.item1": "Isolated sandbox processing",
+    "trust.item1_desc": "Each document is processed in an ephemeral, isolated environment that is destroyed after use.",
+    "trust.item2": "Auto-deletion policy",
+    "trust.item2_desc": "Uploaded files are automatically purged after processing. Nothing lingers on our servers.",
+    "trust.item3": "No training on client files",
+    "trust.item3_desc": "Your proprietary pricing data is never used to train or improve any models.",
+    "trust.item4": "Audit-ready output",
+    "trust.item4_desc": "Every extraction includes a full audit trail so you can verify results with confidence.",
+
     // Waitlist CTA
     "cta.tag": "Join the waitlist",
     "cta.title": "Be the first to know",
@@ -149,13 +194,16 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.contact": "Contact",
     "nav.waitlist": "Rejoindre la liste",
 
-    "hero.launching": "Lancement Bientôt",
-    "hero.morocco": "Premier au Maroc",
-    "hero.autonomous": "Moteur Autonome",
+    "hero.launching": "Bêta Privée",
+    "hero.morocco": "Copilote Marocain",
+    "hero.autonomous": "de Préparation",
     "hero.engine": "d'Appels d'Offres.",
-    "hero.desc": "SPLITGLASS extrait les tableaux de prix BPU des PDF vers Excel en quelques secondes. Rejoignez la liste d'attente pour être le premier servi.",
-    "hero.placeholder": "Votre adresse email",
-    "hero.cta": "Accès anticipé",
+    "hero.desc": "Du chaos CPS/BPU/DQE à l'intelligence de soumission : vérifications de qualification, checklist de conformité, alertes de risques et sorties Excel propres.",
+    "hero.bullet1": "Conçu pour les formats d'appels d'offres marocains (PDF, DOCX, ZIP, scans)",
+    "hero.bullet2": "Piste d'audit et vérifications arithmétiques",
+    "hero.bullet3": "Pensé pour les PME soumissionnant 4 à 15 appels/mois",
+    "hero.cta": "Demander un Pilote",
+    "hero.cta2": "Accès Anticipé",
     "hero.social": "Rejoignez +50 professionnels en attente du lancement",
     "hero.success": "Vous êtes sur la liste !",
     "hero.success_desc": "Merci. Nous vous informerons dès l'ouverture de l'accès anticipé.",
@@ -179,9 +227,10 @@ const translations: Record<Language, Record<string, string>> = {
     "feat.tag": "La Solution",
     "feat.title": "SPLITGLASS rend le traitement sans effort",
     "feat.subtitle": "Automatisez les tâches répétitives pour vous concentrer sur l'offre.",
-    "feat.core": "Technologie Centrale",
+    "feat.core": "Couche d'Extraction",
     "feat.engine": "Moteur BP2XLS",
-    "feat.engine_desc": "Notre moteur IA agit comme processeur central. Il identifie, extrait et valide les tableaux de prix de PDF vers Excel en moins de 30 secondes.",
+    "feat.engine_sub": "(Couche d'Extraction)",
+    "feat.engine_desc": "Notre moteur d'extraction identifie, extrait et valide les tableaux de prix de PDF vers Excel. C'est un composant d'un flux d'Intelligence Appels d'Offres plus large incluant qualification, conformité et audit.",
     "feat.context": "Analyse Contextuelle",
     "feat.native": "Format Excel Natif",
     "feat.discovery": "Découverte",
@@ -207,16 +256,20 @@ const translations: Record<Language, Record<string, string>> = {
     "stats.accuracy": "Précision sur tableaux complexes",
 
     "price.tag": "Tarification",
-    "price.title": "Lancement bientôt avec tarifs simples",
-    "price.free": "Gratuit",
-    "price.free_desc": "Parfait pour tester.",
+    "price.title": "Tarification simple, basée sur les résultats",
+    "price.starter": "Starter",
+    "price.starter_desc": "Paiement par appel d'offre. Idéal pour les soumissions occasionnelles.",
+    "price.starter_price": "À partir de 500 MAD",
+    "price.starter_period": "/appel d'offre",
     "price.pro": "Pro",
-    "price.pro_desc": "Pour les professionnels réguliers.",
+    "price.pro_desc": "Forfait mensuel pour les équipes régulières.",
+    "price.pro_price": "1 000 – 5 000 MAD",
+    "price.pro_period": "/mois",
     "price.ent": "Entreprise",
-    "price.ent_desc": "Pour les grandes entreprises.",
-    "price.period": "/mois",
+    "price.ent_desc": "Tarification volume sur mesure.",
     "price.contact": "Contactez-nous",
-    "price.cta_join": "Rejoindre la liste",
+    "price.cta_start": "Demander un Pilote",
+    "price.cta_join": "Accès Anticipé",
     "price.cta_contact": "Contacter Ventes",
 
     "contact.tag": "Contact",
@@ -243,7 +296,7 @@ const translations: Record<Language, Record<string, string>> = {
     "faq.q5": "Quelles langues sont supportées ?",
     "faq.a5": "Les documents en français et en arabe sont entièrement pris en charge.",
 
-    "foot.desc": "Gagnez plus d'appels d'offres, perdez moins de temps. Digitalisation autonome pour le BTP.",
+    "foot.desc": "Intelligence des appels d'offres pour le BTP marocain. Qualification, conformité, extraction et audit — en un seul flux.",
     "foot.prod": "Produit",
     "foot.comp": "Entreprise",
     "foot.legal": "Légal",
@@ -251,6 +304,43 @@ const translations: Record<Language, Record<string, string>> = {
     "foot.blog": "Blog",
     "foot.terms": "Conditions",
     "foot.privacy": "Confidentialité",
+    "foot.startup": "Vérification Programme",
+    "foot.about": "SplitGlass est une startup marocaine développant un logiciel d'intelligence des appels d'offres pour le secteur du BTP.",
+
+    // What You Get
+    "wyg.tag": "Ce Que Vous Obtenez",
+    "wyg.title": "Préparation complète des appels d'offres",
+    "wyg.subtitle": "Quatre capacités qui transforment les documents bruts en intelligence de soumission.",
+    "wyg.card1_title": "Score Go/No-Go",
+    "wyg.card1_desc": "Analyse de qualification instantanée pour décider si un appel d'offre vaut l'investissement.",
+    "wyg.card2_title": "Checklist de Conformité",
+    "wyg.card2_desc": "Extraction automatique des documents requis, garanties et échéances.",
+    "wyg.card3_title": "Extraction BPU/DQE",
+    "wyg.card3_desc": "Tableaux de prix extraits vers Excel avec fidélité des colonnes, prêts pour votre équipe.",
+    "wyg.card4_title": "Audit & Alertes de Risques",
+    "wyg.card4_desc": "Détection des écarts de totaux, lignes manquantes et filtrage du bruit pour sécuriser votre soumission.",
+
+    // Who It's For
+    "wif.tag": "Pour Qui",
+    "wif.title": "Conçu pour les équipes d'appels d'offres marocaines",
+    "wif.subtitle": "Que vous soumissionniez 4 ou 15 appels par mois, SplitGlass vous fait gagner des heures.",
+    "wif.item1": "PME du BTP",
+    "wif.item2": "Bureaux d'études",
+    "wif.item3": "Consultants en appels d'offres",
+    "wif.item4": "Priorité Maroc, flux français/arabe",
+
+    // Trust / Security
+    "trust.tag": "Sécurité",
+    "trust.title": "Sécurité & traitement des données",
+    "trust.subtitle": "Vos documents contiennent des données de prix sensibles. Nous les traitons en conséquence.",
+    "trust.item1": "Traitement en sandbox isolé",
+    "trust.item1_desc": "Chaque document est traité dans un environnement éphémère et isolé, détruit après usage.",
+    "trust.item2": "Politique de suppression automatique",
+    "trust.item2_desc": "Les fichiers sont automatiquement purgés après traitement.",
+    "trust.item3": "Aucun entraînement sur vos fichiers",
+    "trust.item3_desc": "Vos données de prix ne sont jamais utilisées pour entraîner des modèles.",
+    "trust.item4": "Sortie prête pour l'audit",
+    "trust.item4_desc": "Chaque extraction inclut une piste d'audit complète.",
 
     "cta.tag": "Rejoindre la liste",
     "cta.title": "Soyez le premier informé",
@@ -269,14 +359,17 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.contact": "تواصل معنا",
     "nav.waitlist": "انضم لقائمة الانتظار",
 
-    // Hero Section (الواجهة الرئيسية)
-    "hero.launching": "على وشك الإنطلاق",
-    "hero.morocco": "أول محرك مغربي",
-    "hero.autonomous": "ذكي ومستقل",
-    "hero.engine": "لمعالجة الصفقات.",
-    "hero.desc": "تقوم تقنية SPLITGLASS باستخراج جداول الأسعار (BPU) من ملفات PDF وتحويلها إلى Excel في ثوانٍ. انضم لقائمة الانتظار لتكون في المقدمة عند الإطلاق.",
-    "hero.placeholder": "أدخل بريدك الإلكتروني",
-    "hero.cta": "احصل على دخول مبكر",
+    // Hero Section
+    "hero.launching": "نسخة تجريبية خاصة",
+    "hero.morocco": "مساعد مغربي",
+    "hero.autonomous": "لتحضير",
+    "hero.engine": "الصفقات العمومية",
+    "hero.desc": "من فوضى CPS/BPU/DQE إلى ذكاء العروض: فحوصات التأهل، قائمة الامتثال، إشارات المخاطر، ومخرجات Excel جاهزة.",
+    "hero.bullet1": "مصمم لتنسيقات الصفقات المغربية (PDF، DOCX، ZIP، المسح الضوئي)",
+    "hero.bullet2": "سجل تدقيق وفحوصات حسابية",
+    "hero.bullet3": "مصمم للمقاولات التي تقدم 4 إلى 15 عرض/شهر",
+    "hero.cta": "طلب نسخة تجريبية",
+    "hero.cta2": "الحصول على وصول مبكر",
     "hero.social": "انضم لأكثر من 50 محترفاً في قطاع البناء يترقبون الإطلاق",
     "hero.success": "شكراً لكم!",
     "hero.success_desc": "سوف نقوم بالتواصل معكم بالتحديثات القادمة.",
@@ -302,9 +395,10 @@ const translations: Record<Language, Record<string, string>> = {
     "feat.tag": "الحل التقني",
     "feat.title": "SPLITGLASS تجعل معالجة الصفقات انسيابية",
     "feat.subtitle": "أتمتة المهام الروتينية لتتفرغ للتركيز على الفوز بالصفقة.",
-    "feat.core": "التكنولوجيا الأساسية",
-    "feat.engine": "محرك المعالجة BP2XLS",
-    "feat.engine_desc": "يعمل محرك الذكاء الاصطناعي الخاص بنا كمعالج مركزي لوثائق الصفقات. يقوم بتحديد، استخراج، والتحقق من جداول الأسعار من PDF إلى Excel في أقل من 30 ثانية.",
+    "feat.core": "طبقة الاستخراج",
+    "feat.engine": "محرك BP2XLS",
+    "feat.engine_sub": "(طبقة الاستخراج)",
+    "feat.engine_desc": "يقوم محرك الاستخراج بتحديد واستخراج والتحقق من جداول الأسعار من PDF إلى Excel. هو جزء من منظومة ذكاء صفقات أشمل تتضمن التأهل والامتثال والتدقيق.",
     "feat.context": "تحليل سياقي",
     "feat.native": "مخرجات Excel أصلية",
     "feat.discovery": "استكشاف الصفقات",
@@ -333,16 +427,20 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Pricing (خطط الاشتراك)
     "price.tag": "الأسعار",
-    "price.title": "انطلاق قريب بأسعار مبسطة",
-    "price.free": "مجانية",
-    "price.free_desc": "مثالية لاستكشاف المنصة.",
+    "price.title": "تسعير بسيط ومرتبط بالنتائج",
+    "price.starter": "أساسي",
+    "price.starter_desc": "الدفع لكل صفقة. مثالي للمشاركات العرضية.",
+    "price.starter_price": "ابتداءً من 500 درهم",
+    "price.starter_period": "/صفقة",
     "price.pro": "احترافية",
-    "price.pro_desc": "للمحترفين الذين يشاركون بانتظام.",
+    "price.pro_desc": "اشتراك شهري للفرق النشطة.",
+    "price.pro_price": "1,000 – 5,000 درهم",
+    "price.pro_period": "/شهر",
     "price.ent": "مؤسسات",
-    "price.ent_desc": "لشركات البناء الكبرى.",
-    "price.period": "/ شهر",
+    "price.ent_desc": "تسعير حجمي مخصص للشركات الكبرى.",
     "price.contact": "تواصل معنا",
-    "price.cta_join": "انضم لقائمة الانتظار",
+    "price.cta_start": "طلب نسخة تجريبية",
+    "price.cta_join": "الحصول على وصول مبكر",
     "price.cta_contact": "تواصل مع المبيعات",
 
     // Contact
@@ -382,14 +480,51 @@ const translations: Record<Language, Record<string, string>> = {
     "cta.another": "تسجيل بريد إلكتروني آخر",
 
     // Footer (تذييل الصفحة)
-    "foot.desc": "فز بالمزيد من الصفقات، ووفر الوقت. رقمنة ذاتية ذكية لصناعة البناء والأشغال.",
+    "foot.desc": "ذكاء الصفقات للبناء المغربي. التأهل والامتثال والاستخراج والتدقيق — في منظومة واحدة.",
     "foot.prod": "المنتج",
     "foot.comp": "الشركة",
     "foot.legal": "قانوني",
     "foot.how": "كيف يعمل النظام",
     "foot.blog": "المدونة",
     "foot.terms": "شروط الخدمة",
-    "foot.privacy": "سياسة الخصوصية"
+    "foot.privacy": "سياسة الخصوصية",
+    "foot.startup": "التحقق من البرنامج",
+    "foot.about": "سبليت جلاس هي شركة ناشئة مغربية تطور برمجيات ذكاء الصفقات لقطاع البناء والأشغال العمومية.",
+
+    // What You Get
+    "wyg.tag": "ما ستحصل عليه",
+    "wyg.title": "تحضير شامل للصفقات",
+    "wyg.subtitle": "أربع قدرات تحول الوثائق الخام إلى ذكاء عروض جاهز.",
+    "wyg.card1_title": "تقييم المشاركة/عدم المشاركة",
+    "wyg.card1_desc": "تحليل تأهل فوري لتقرر إن كانت الصفقة تستحق الاستثمار قبل إهدار ساعات.",
+    "wyg.card2_title": "قائمة الامتثال",
+    "wyg.card2_desc": "استخراج تلقائي للوثائق المطلوبة والضمانات والمواعيد النهائية.",
+    "wyg.card3_title": "استخراج BPU/DQE",
+    "wyg.card3_desc": "جداول الأسعار مستخرجة إلى Excel بدقة الأعمدة، جاهزة لفريق التقدير.",
+    "wyg.card4_title": "التدقيق وإشارات المخاطر",
+    "wyg.card4_desc": "كشف تفاوتات المجاميع، تنبيهات الأسطر المفقودة، وتصفية الضوضاء لتأمين عرضك.",
+
+    // Who It's For
+    "wif.tag": "لمن هذا المنتج",
+    "wif.title": "مصمم لفرق الصفقات المغربية",
+    "wif.subtitle": "سواء تقدمت لـ 4 أو 15 صفقة شهرياً، سبليت جلاس توفر لك ساعات لكل عرض.",
+    "wif.item1": "المقاولات الصغيرة والمتوسطة",
+    "wif.item2": "مكاتب الدراسات",
+    "wif.item3": "مستشارو الصفقات",
+    "wif.item4": "أولوية مغربية، سير عمل بالفرنسية والعربية",
+
+    // Trust / Security
+    "trust.tag": "الأمان",
+    "trust.title": "الأمان ومعالجة البيانات",
+    "trust.subtitle": "وثائق صفقاتك تحتوي على بيانات تسعير حساسة. نعاملها بمسؤولية.",
+    "trust.item1": "معالجة في بيئة معزولة",
+    "trust.item1_desc": "كل وثيقة تُعالج في بيئة مؤقتة ومعزولة تُدمر بعد الاستخدام.",
+    "trust.item2": "سياسة الحذف التلقائي",
+    "trust.item2_desc": "الملفات المرفوعة تُحذف تلقائياً بعد المعالجة. لا شيء يبقى على خوادمنا.",
+    "trust.item3": "لا تدريب على ملفات العملاء",
+    "trust.item3_desc": "بيانات التسعير الخاصة بك لا تُستخدم أبداً لتدريب أو تحسين أي نماذج.",
+    "trust.item4": "مخرجات جاهزة للتدقيق",
+    "trust.item4_desc": "كل استخراج يتضمن سجل تدقيق كامل للتحقق بثقة."
   }
 };
 
@@ -405,7 +540,7 @@ export const LanguageProvider = ({ children }: { children?: ReactNode }) => {
     setDirection(dir);
     document.documentElement.dir = dir;
     document.documentElement.lang = language;
-    
+
     // Toggle font class for Arabic
     if (language === 'ar') {
       document.body.classList.add('lang-ar');

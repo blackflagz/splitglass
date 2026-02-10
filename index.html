@@ -1,14 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en" class="dark scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SPLITGLASS: Morocco's First Autonomous Tender Engine. Extract BPU pricing tables from PDFs to Excel in seconds." />
-    <title>SPLITGLASS | Construction Tender Digitization</title>
-    
-    <!-- Google Analytics 4 (GA4) - Replace G-XXXXXXXXXX with your Measurement ID -->
-    <!-- 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="SplitGlass — Morocco's Tender Intelligence Platform. Qualification, compliance, BPU/DQE extraction, and audit for construction tenders." />
+  <title>SplitGlass — Morocco's Tender Intelligence Platform</title>
+  <link rel="canonical" href="https://splitglass.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SplitGlass" />
+  <meta property="og:title" content="SplitGlass — Morocco's Tender Intelligence Platform" />
+  <meta property="og:description"
+    content="From CPS/BPU/DQE chaos to bid-ready intelligence. Qualification, compliance, extraction, and audit for Moroccan construction tenders." />
+  <meta property="og:url" content="https://splitglass.com" />
+
+  <!-- JSON-LD Organization Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SplitGlass",
+      "url": "https://splitglass.com",
+      "description": "Morocco-based startup building tender intelligence software for the construction industry.",
+      "founder": { "@type": "Person", "name": "Hamza Atabrour" },
+      "email": "ceo@splitglass.com",
+      "address": { "@type": "PostalAddress", "addressCountry": "MA" }
+    }
+    </script>
+
+  <!-- Google Analytics 4 (GA4) - Replace G-XXXXXXXXXX with your Measurement ID -->
+  <!-- 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,95 +42,153 @@
     </script> 
     -->
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Fustat:wght@200..800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              display: ['Inter', 'sans-serif'],
-              mono: ['JetBrains Mono', 'monospace'],
-              sci: ['Space Grotesk', 'sans-serif'],
-              anton: ['Anton SC', 'sans-serif'],
-            }
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Anton+SC&family=Fustat:wght@200..800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+            sci: ['Space Grotesk', 'sans-serif'],
+            anton: ['Anton SC', 'sans-serif'],
           }
         }
       }
-    </script>
+    }
+  </script>
 
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #020204; /* Deep Void Black */
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-      
-      /* Apply Arabic fonts when language is Arabic */
-      body.lang-ar {
-        font-family: 'Fustat', sans-serif;
-      }
-      
-      /* Headlines in Arabic use Alexandria */
-      body.lang-ar .font-display,
-      body.lang-ar .font-anton {
-        font-family: 'Alexandria', sans-serif;
-        letter-spacing: -0.02em !important; 
-        word-spacing: 0.1em; 
-        line-height: 1.3 !important; /* increased for better breathing room */
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #020204;
+      /* Deep Void Black */
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* Apply Arabic fonts when language is Arabic */
+    body.lang-ar {
+      font-family: 'Fustat', sans-serif;
+    }
+
+    /* Headlines in Arabic use Alexandria */
+    body.lang-ar .font-display,
+    body.lang-ar .font-anton {
+      font-family: 'Alexandria', sans-serif;
+      letter-spacing: -0.02em !important;
+      word-spacing: 0.1em;
+      line-height: 1.3 !important;
+      /* increased for better breathing room */
+    }
+
+    /* Body/Small text/Mono in Arabic use Fustat */
+    body.lang-ar .font-mono,
+    body.lang-ar .font-sci {
+      font-family: 'Fustat', sans-serif;
+      letter-spacing: 0 !important;
+      line-height: 1.6;
+    }
+
+    .font-display {
+      font-family: 'Inter', sans-serif;
+      letter-spacing: -0.04em;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .font-sci {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .font-anton {
+      font-family: 'Anton SC', sans-serif;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #000000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #333333;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #444444;
+    }
+
+    /* Noise Texture */
+    .bg-noise {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+    }
+
+    /* Infinite Grid Animation */
+    @keyframes grid-flow {
+      0% {
+        transform: perspective(1000px) rotateX(60deg) translateY(0);
       }
 
-      /* Body/Small text/Mono in Arabic use Fustat */
-      body.lang-ar .font-mono,
-      body.lang-ar .font-sci {
-        font-family: 'Fustat', sans-serif;
-        letter-spacing: 0 !important;
-        line-height: 1.6;
+      100% {
+        transform: perspective(1000px) rotateX(60deg) translateY(40px);
+      }
+    }
+
+    .animate-grid {
+      animation: grid-flow 2s linear infinite;
+    }
+
+    /* Glitch Effect Keyframes */
+    @keyframes glitch {
+      0% {
+        clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+        transform: translate(0);
       }
 
-      .font-display { font-family: 'Inter', sans-serif; letter-spacing: -0.04em; }
-      .font-mono { font-family: 'JetBrains Mono', monospace; }
-      .font-sci { font-family: 'Space Grotesk', sans-serif; }
-      .font-anton { font-family: 'Anton SC', sans-serif; }
-      
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #000000; }
-      ::-webkit-scrollbar-thumb { background: #333333; border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: #444444; }
-
-      /* Noise Texture */
-      .bg-noise {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+      20% {
+        clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+        transform: translate(-2px, 2px);
       }
 
-      /* Infinite Grid Animation */
-      @keyframes grid-flow {
-        0% { transform: perspective(1000px) rotateX(60deg) translateY(0); }
-        100% { transform: perspective(1000px) rotateX(60deg) translateY(40px); }
-      }
-      .animate-grid {
-        animation: grid-flow 2s linear infinite;
+      40% {
+        clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+        transform: translate(2px, -2px);
       }
 
-      /* Glitch Effect Keyframes */
-      @keyframes glitch {
-        0% { clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%); transform: translate(0); }
-        20% { clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%); transform: translate(-2px, 2px); }
-        40% { clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%); transform: translate(2px, -2px); }
-        60% { clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%); transform: translate(-2px, 2px); }
-        80% { clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%); transform: translate(0); }
-        100% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); transform: translate(0); }
+      60% {
+        clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+        transform: translate(-2px, 2px);
       }
-      .animate-glitch {
-        animation: glitch 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+      80% {
+        clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+        transform: translate(0);
       }
-    </style>
+
+      100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transform: translate(0);
+      }
+    }
+
+    .animate-glitch {
+      animation: glitch 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -121,10 +203,24 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-[#020204]">
-    <div id="root"></div>
+
+<body class="bg-[#020204]">
+  <div id="root"></div>
+  <noscript>
+    <div
+      style="max-width:720px;margin:0 auto;padding:40px 24px;font-family:sans-serif;color:#e0e0e0;background:#020204;">
+      <h1>SplitGlass — Morocco's Tender Intelligence Platform</h1>
+      <p>SplitGlass helps Moroccan construction firms process tender documents (CPS, BPU, DQE, BPDE) into bid-ready
+        outputs with qualification checks, compliance checklists, clean Excel extraction, and audit trails.</p>
+      <p><strong>Founder:</strong> Hamza Atabrour | <strong>Contact:</strong> ceo@splitglass.com |
+        <strong>Country:</strong> Morocco | <strong>Stage:</strong> Private Beta
+      </p>
+      <p><a href="/startup-profile.html" style="color:#2979FF;">View full startup profile →</a></p>
+    </div>
+  </noscript>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
