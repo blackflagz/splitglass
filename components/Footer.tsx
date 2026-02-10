@@ -55,7 +55,7 @@ export const Footer = () => {
             <p className="text-white font-bold text-sm">{t('foot.legal')}</p>
             <a href="#" className="text-sm text-white/40 hover:text-white transition-colors">{t('foot.privacy')}</a>
             <a href="#" className="text-sm text-white/40 hover:text-white transition-colors">{t('foot.terms')}</a>
-            <a href="/startup-profile.html" className="text-sm text-white/40 hover:text-white transition-colors">{t('foot.startup')}</a>
+            <a href="/startup-profile" className="text-sm text-white/40 hover:text-white transition-colors">{t('foot.startup')}</a>
           </div>
         </div>
       </footer>
