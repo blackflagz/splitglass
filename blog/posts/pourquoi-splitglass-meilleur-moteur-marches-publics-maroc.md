@@ -67,7 +67,7 @@ BP2XLS utilise cette même infrastructure :
 
 ### Pourquoi c'est supérieur à la concurrence
 
-- **Datao.ma** → Aucune information publique sur l'isolation de leur traitement. Leurs données passent-elles par OpenAI ? Par Google ? Vous ne savez pas.
+- **Les autres plateformes** → Aucune information publique sur l'isolation de leur traitement. Vos données passent-elles par OpenAI ? Par Google ? Par un serveur mutualisé ? Vous ne savez pas.
 - **Copier-coller dans ChatGPT** → Vos prix unitaires sont envoyés aux serveurs d'OpenAI et potentiellement utilisés pour l'entraînement. Votre stratégie commerciale n'est plus confidentielle.
 - **BP2XLS** → Sandbox éphémère, isolation totale, auto-destruction après traitement. **Souveraineté des données garantie.**
 

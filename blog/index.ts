@@ -11,6 +11,7 @@ export interface BlogPost {
     tags: string[];
     lang: string;
     content: string;
+    featured?: boolean;
 }
 
 /**
@@ -36,6 +37,10 @@ function parseFrontmatter(raw: string): { data: Record<string, unknown>; content
         if (typeof value === 'string' && value.startsWith('"') && value.endsWith('"')) {
             value = value.slice(1, -1);
         }
+
+        // Parse booleans
+        if (value === 'true') value = true;
+        if (value === 'false') value = false;
 
         // Parse arrays: ["item1", "item2"]
         if (typeof value === 'string' && value.startsWith('[')) {

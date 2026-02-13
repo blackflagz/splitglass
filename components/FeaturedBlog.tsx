@@ -8,7 +8,11 @@ import { useLanguage } from '../lib/i18n';
 
 export const FeaturedBlog: React.FC = () => {
     const { t } = useLanguage();
-    const posts = getAllPosts().slice(0, 3);
+    const allPosts = getAllPosts();
+    const posts = [
+        ...allPosts.filter(p => p.featured),
+        ...allPosts.filter(p => !p.featured),
+    ].slice(0, 3);
 
     if (posts.length === 0) return null;
 
