@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Globe } from 'lucide-react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { PremiumButton } from './ui/PremiumButton';
 import { SplitGlassLogo } from './ui/SplitGlassLogo';
 import { useLanguage, Language } from '../lib/i18n';
@@ -12,7 +12,6 @@ export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
   const location = useLocation();
-  const navigate = useNavigate();
   const isHome = location.pathname === '/';
 
   const handleAnchorClick = (e: React.MouseEvent, href: string) => {
@@ -22,7 +21,7 @@ export const Header = () => {
       const el = document.getElementById(anchor);
       if (el) el.scrollIntoView({ behavior: 'smooth' });
     } else {
-      navigate('/#' + anchor);
+      window.location.href = '/#' + anchor;
     }
     setMobileMenuOpen(false);
   };
@@ -80,8 +79,8 @@ export const Header = () => {
                 key={lang.code}
                 onClick={() => setLanguage(lang.code)}
                 className={`px-3 py-1 rounded-md text-[10px] font-bold transition-all duration-300 ${language === lang.code
-                    ? 'bg-[#2979FF] text-white shadow-lg shadow-[#2979FF]/20'
-                    : 'text-white/40 hover:text-white'
+                  ? 'bg-[#2979FF] text-white shadow-lg shadow-[#2979FF]/20'
+                  : 'text-white/40 hover:text-white'
                   }`}
               >
                 {lang.label}
