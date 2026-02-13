@@ -11,6 +11,7 @@ import { Pricing } from '../components/Pricing';
 import { TrustSection } from '../components/TrustSection';
 import { FAQ } from '../components/FAQ';
 import { Contact } from '../components/Contact';
+import { FeaturedBlog } from '../components/FeaturedBlog';
 import { WaitlistCTA } from '../components/WaitlistCTA';
 import { Footer } from '../components/Footer';
 import { ThreeBackground } from '../components/ThreeBackground';
@@ -30,6 +31,7 @@ const Home: React.FC = () => {
                 <Stats />
                 <Pricing />
                 <TrustSection />
+                <FeaturedBlog />
                 <FAQ />
                 <Contact />
                 <WaitlistCTA />
