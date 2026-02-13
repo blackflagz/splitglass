@@ -47,7 +47,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-4">
             <p className="text-white font-bold text-sm">{t('foot.comp')}</p>
             <a href="#" className="text-sm text-white/40 hover:text-white transition-colors">{t('nav.about')}</a>
-            <a href="#" className="text-sm text-white/40 hover:text-white transition-colors">{t('foot.blog')}</a>
+            <a href="/blog" className="text-sm text-white/40 hover:text-white transition-colors">{t('foot.blog')}</a>
             <a href="#" className="text-sm text-white/40 hover:text-white transition-colors">{t('nav.contact')}</a>
           </div>
 

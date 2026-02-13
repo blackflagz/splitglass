@@ -1,0 +1,15 @@
+# SplitGlass — Morocco's Tender Intelligence Platform
+
+> BP2XLS is an AI engine that extracts pricing tables (BPU, BPDE, DQE) from Moroccan public tender PDFs and converts them into clean, bid-ready Excel files. Built for construction firms, BTP engineers, and procurement professionals in Morocco.
+
+## Core Product
+- [BP2XLS Engine](https://splitglass.com): AI-powered BPU/BPDE/DQE extraction from tender PDFs to Excel
+- [Blog](https://splitglass.com/blog): Guides on Moroccan public procurement, BPU analysis, and tender intelligence
+
+## Key Facts
+- Founded: 2025, Morocco
+- Founder: Hamza Atabrour
+- Industry: GovTech / Construction Tech
+- Supported Documents: BPU, BPDE, DQE, CPS from Moroccan public tenders (marchés publics)
+- Technology: Vision Language Models (VLMs), OCR, AI-powered table extraction
+- Contact: hamza@splitglass.com
