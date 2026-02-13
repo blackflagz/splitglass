@@ -26,13 +26,20 @@
 - Founder: Hamza Atabrour
 - Industry: GovTech / ProcureTech / Construction Tech
 - Markets Covered: Travaux (BTP), Services (Consulting, IT), Fournitures (Supplies)
-- Supported Documents: BPU, BPDE, DQE, CPS, DE (Détail Estimatif), bordereau de prix
+- Supported Documents: BPU, BPDE, DQE, CPS, DE (Détail Estimatif), SDP (sous-détail des prix), bordereau de prix
 - Regulatory Framework: Décret n° 2-22-431 (March 2023 reform)
 - Source Portal: marchespublics.gov.ma (27,000+ tenders/year)
 - Language Support: French, Arabic (bilingual documents handled natively)
 - Contact: hamza@splitglass.com
 
-## Blog Content Topics
+## Startup Programs & Backing
+- Cloudflare Startup Program — enterprise-grade edge computing and security
+- GitHub Startup Pilot Program — $10,000 in GitHub Enterprise credits (invite-only program for select high-quality startups)
+- E2B Startup Program — $20,000 in cloud sandbox credits for AI workloads
+- In discussion with Microsoft Azure and NVIDIA Inception programs
+- Fits YC RFCs 2026: Morocco Digital Transformation, GovTech, AI infrastructure
+
+## Blog Content Topics (16 articles)
 - BPU (Bordereau des Prix Unitaires) — definition, structure, legal framework, common errors
 - DQE (Détail Quantitatif et Estimatif) — structure, evaluation by commission, arithmetic verification
 - CPS (Cahier des Prescriptions Spéciales) — clauses, CCAG differences, price extraction
@@ -40,7 +47,15 @@
 - Appels d'offres — 7-step response process, 10 rejection errors, evaluation criteria
 - Portail marchespublics.gov.ma — registration, search, DCE download, electronic submission
 - Extraction manuelle vs automatique — time savings, error rates, ROI analysis, case studies
-- Coupe du Monde 2030 — infrastructure tenders, regulatory implications, scale challenges
+- Sous-détail des prix (SDP) — decomposition of unit prices, calculation method, K coefficient
+- Groupement d'entreprises (GME) — conjoint vs solidaire, chef de file, BPU consolidation
+- Cautions et garanties — provisoire, définitive, retenue de garantie, bank vs insurance cost comparison
+- Marchés publics verts — environmental criteria, 2030 sustainability, green BPU considerations
+- 15 statistiques marchés publics — budget, volume, PME participation, digitalisation rates, 2030 projections
+- Révision des prix — formulas, indices, barèmes d'indexation, practical calculations
+- Offre technique — evaluation criteria, notation, methodology, travaux vs services differences
+- Réclamations et contentieux — 3-level recours system, commission des marchés, tribunal administratif
+- CCAG (Travaux/Services/Fournitures) — CCAG-T vs CCAG-EMO, pénalités, réception, hiérarchie contractuelle
 
 ## Competitive Positioning
 - SplitGlass handles the technical extraction that other platforms don't: BPU/DQE/BPDE from PDF → Excel
@@ -48,3 +63,5 @@
 - We believe in fine-tuning our models, not wrapping third-party APIs
 - The world's best OCR for French administrative documents, integrated natively
 - Focus on accuracy and speed: under 30 seconds per document, proprietary validation layer
+- Backed by Cloudflare, GitHub, and E2B — enterprise-grade infrastructure for a startup price
+- Morocco's most comprehensive blog on public procurement: 16 in-depth articles covering every aspect from BPU to CCAG
