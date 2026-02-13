@@ -12,7 +12,7 @@ const categories = [
     { id: 'marches-publics', label: 'Marchés Publics' },
     { id: 'guides', label: 'Guides' },
     { id: 'comparatifs', label: 'Comparatifs' },
-    { id: 'ia-btp', label: 'IA & BTP' },
+    { id: 'ia-btp', label: 'IA & Marchés Publics' },
 ];
 
 const Blog: React.FC = () => {

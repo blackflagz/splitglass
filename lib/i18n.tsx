@@ -31,7 +31,7 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.bullet3": "Designed for SMEs bidding 4–15 tenders/month",
     "hero.cta": "Request Pilot",
     "hero.cta2": "Get Early Access",
-    "hero.social": "Join 50+ construction professionals waiting for launch",
+    "hero.social": "Join 50+ procurement professionals waiting for launch",
     "hero.success": "You're on the list!",
     "hero.success_desc": "Thanks for joining. We'll notify you as soon as early access opens.",
 
@@ -131,7 +131,7 @@ const translations: Record<Language, Record<string, string>> = {
     "faq.a5": "French and Arabic documents are fully supported.",
 
     // Footer
-    "foot.desc": "Tender intelligence for Moroccan construction. Qualification, compliance, extraction, and audit — in one workflow.",
+    "foot.desc": "Tender intelligence for Moroccan public procurement. Qualification, compliance, extraction, and audit — in one workflow.",
     "foot.prod": "Product",
     "foot.comp": "Company",
     "foot.legal": "Legal",
@@ -140,7 +140,7 @@ const translations: Record<Language, Record<string, string>> = {
     "foot.terms": "Terms of Service",
     "foot.privacy": "Privacy Policy",
     "foot.startup": "Program Verification",
-    "foot.about": "SplitGlass is a Morocco-based startup building tender intelligence software for the construction industry.",
+    "foot.about": "SplitGlass is a Morocco-based startup building the N°1 tender intelligence platform for public procurement — covering construction, services, and supplies.",
 
     // What You Get
     "wyg.tag": "What You Get",
@@ -159,7 +159,7 @@ const translations: Record<Language, Record<string, string>> = {
     "wif.tag": "Who It's For",
     "wif.title": "Built for Moroccan tender teams",
     "wif.subtitle": "Whether you bid on 4 or 15 tenders a month, SplitGlass saves you hours per submission.",
-    "wif.item1": "Small & mid-size contractors",
+    "wif.item1": "Construction & engineering firms",
     "wif.item2": "Bureaux d'études",
     "wif.item3": "Tender consultants",
     "wif.item4": "Morocco-first, French/Arabic workflows",
@@ -296,7 +296,7 @@ const translations: Record<Language, Record<string, string>> = {
     "faq.q5": "Quelles langues sont supportées ?",
     "faq.a5": "Les documents en français et en arabe sont entièrement pris en charge.",
 
-    "foot.desc": "Intelligence des appels d'offres pour le BTP marocain. Qualification, conformité, extraction et audit — en un seul flux.",
+    "foot.desc": "Intelligence des appels d'offres pour les marchés publics marocains. Qualification, conformité, extraction et audit — travaux, services et fournitures.",
     "foot.prod": "Produit",
     "foot.comp": "Entreprise",
     "foot.legal": "Légal",
@@ -305,7 +305,7 @@ const translations: Record<Language, Record<string, string>> = {
     "foot.terms": "Conditions",
     "foot.privacy": "Confidentialité",
     "foot.startup": "Vérification Programme",
-    "foot.about": "SplitGlass est une startup marocaine développant un logiciel d'intelligence des appels d'offres pour le secteur du BTP.",
+    "foot.about": "SplitGlass est une startup marocaine développant la plateforme N°1 d'intelligence des appels d'offres — travaux, services et fournitures.",
 
     // What You Get
     "wyg.tag": "Ce Que Vous Obtenez",
@@ -324,7 +324,7 @@ const translations: Record<Language, Record<string, string>> = {
     "wif.tag": "Pour Qui",
     "wif.title": "Conçu pour les équipes d'appels d'offres marocaines",
     "wif.subtitle": "Que vous soumissionniez 4 ou 15 appels par mois, SplitGlass vous fait gagner des heures.",
-    "wif.item1": "PME du BTP",
+    "wif.item1": "Entreprises BTP & ingénierie",
     "wif.item2": "Bureaux d'études",
     "wif.item3": "Consultants en appels d'offres",
     "wif.item4": "Priorité Maroc, flux français/arabe",
@@ -370,7 +370,7 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.bullet3": "مصمم للمقاولات التي تقدم 4 إلى 15 عرض/شهر",
     "hero.cta": "طلب نسخة تجريبية",
     "hero.cta2": "الحصول على وصول مبكر",
-    "hero.social": "انضم لأكثر من 50 محترفاً في قطاع البناء يترقبون الإطلاق",
+    "hero.social": "انضم لأكثر من 50 محترفاً في الصفقات العمومية يترقبون الإطلاق",
     "hero.success": "شكراً لكم!",
     "hero.success_desc": "سوف نقوم بالتواصل معكم بالتحديثات القادمة.",
 
@@ -480,7 +480,7 @@ const translations: Record<Language, Record<string, string>> = {
     "cta.another": "تسجيل بريد إلكتروني آخر",
 
     // Footer (تذييل الصفحة)
-    "foot.desc": "ذكاء الصفقات للبناء المغربي. التأهل والامتثال والاستخراج والتدقيق — في منظومة واحدة.",
+    "foot.desc": "ذكاء الصفقات العمومية المغربية. التأهل والامتثال والاستخراج والتدقيق — أشغال، خدمات وتوريدات.",
     "foot.prod": "المنتج",
     "foot.comp": "الشركة",
     "foot.legal": "قانوني",
@@ -489,7 +489,7 @@ const translations: Record<Language, Record<string, string>> = {
     "foot.terms": "شروط الخدمة",
     "foot.privacy": "سياسة الخصوصية",
     "foot.startup": "التحقق من البرنامج",
-    "foot.about": "سبليت جلاس هي شركة ناشئة مغربية تطور برمجيات ذكاء الصفقات لقطاع البناء والأشغال العمومية.",
+    "foot.about": "سبليت جلاس هي شركة ناشئة مغربية تطور منصة ذكاء الصفقات رقم 1 — أشغال، خدمات وتوريدات.",
 
     // What You Get
     "wyg.tag": "ما ستحصل عليه",
