@@ -9,7 +9,7 @@ const specs = [
   {
     icon: Cpu,
     title: "Local Inference",
-    desc: "We utilize optimized open-source models (Qwen 2.5 / Llama 3) running on isolated compute instances. Your proprietary pricing data is never used to train public models."
+    desc: "We utilize fine-tuned, proprietary AI models running on isolated compute instances. Your proprietary pricing data is never used to train public models."
   },
   {
     icon: ShieldCheck,
@@ -27,7 +27,7 @@ export const DeveloperSection = () => {
   return (
     <section className="py-40 px-6 max-w-7xl mx-auto border-t border-white/5">
       <div className="text-center mb-24">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -44,7 +44,7 @@ export const DeveloperSection = () => {
         </motion.div>
       </div>
 
-      <motion.div 
+      <motion.div
         variants={staggerContainer}
         initial="initial"
         whileInView="whileInView"
@@ -52,7 +52,7 @@ export const DeveloperSection = () => {
         className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20"
       >
         {specs.map((spec, i) => (
-          <motion.div 
+          <motion.div
             key={i}
             variants={fadeInUp}
             whileHover={{ y: -5 }}
@@ -68,11 +68,11 @@ export const DeveloperSection = () => {
           </motion.div>
         ))}
       </motion.div>
-      
+
       <div className="flex justify-center">
-         <PremiumButton variant="primary" size="lg">
-           Read Security Whitepaper <ArrowRight className="w-4 h-4 ml-2" />
-         </PremiumButton>
+        <PremiumButton variant="primary" size="lg">
+          Read Security Whitepaper <ArrowRight className="w-4 h-4 ml-2" />
+        </PremiumButton>
       </div>
     </section>
   );

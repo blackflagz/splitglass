@@ -9,7 +9,7 @@ import { useDocumentMeta } from '../lib/useDocumentMeta';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 
-const BOILERPLATE = `**SplitGlass** développe BP2XLS, le premier moteur IA marocain d'extraction automatique des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des marchés publics. Fondé en 2025, SplitGlass transforme les documents d'appels d'offres en données Excel structurées en quelques secondes. Contact : hamza [at] splitglass.com`;
+const BOILERPLATE = `**SplitGlass** développe BP2XLS, le moteur N°1 d'extraction automatique des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des marchés publics au Maroc. Propulsé par un pipeline propriétaire de modèles IA fine-tunés, BP2XLS transforme les documents d'appels d'offres en données Excel structurées en moins de 30 secondes — travaux, services et fournitures. Fondé en 2025 par Hamza Atabrour. Contact : hamza [at] splitglass.com`;
 
 function BlogPostSchema({ post }: { post: BlogPostType }) {
     const schema = {

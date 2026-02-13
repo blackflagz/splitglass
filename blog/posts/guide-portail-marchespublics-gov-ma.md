@@ -6,7 +6,7 @@ date: "2026-02-13"
 lastUpdated: "2026-02-13"
 author: "Hamza Atabrour"
 category: "guides"
-tags: ["marchespublics.gov.ma", "portail marchés publics", "Maroc", "soumission en ligne", "dématérialisation"]
+tags: ["marchespublics.gov.ma", "portail marchés publics", "Maroc", "soumission en ligne", "dématérialisation", "BTP", "services"]
 lang: "fr"
 ---
 
@@ -14,7 +14,16 @@ lang: "fr"
 
 *Dernière mise à jour : 13 février 2026*
 
-**Résumé** : Le portail marchespublics.gov.ma est la plateforme officielle de dématérialisation des marchés publics au Maroc, gérée par la Trésorerie Générale du Royaume. Depuis 2023, la soumission électronique est obligatoire pour la majorité des marchés publics. Ce guide couvre l'inscription, la recherche d'appels d'offres, le téléchargement du DCE, et la soumission en ligne étape par étape.
+**Résumé** : Le portail marchespublics.gov.ma est la plateforme officielle de dématérialisation des marchés publics au Maroc, gérée par la Trésorerie Générale du Royaume. Depuis 2023, la soumission électronique est obligatoire pour la majorité des marchés publics. Ce guide couvre l'inscription, la recherche d'appels d'offres, le téléchargement du DCE, et la soumission en ligne étape par étape — pour les marchés de travaux, services et fournitures.
+
+## Points Clés
+
+- Le portail marchespublics.gov.ma centralise **plus de 27 000 appels d'offres par an** — travaux, services et fournitures
+- L'inscription est **gratuite** et le téléchargement du DCE est accessible à toute entreprise immatriculée au RC
+- Depuis la réforme de 2023, la **soumission électronique est obligatoire** pour la majorité des marchés
+- Le portail ferme automatiquement et **sans exception** à l'heure limite — prévoyez toujours 24h de marge
+- Après téléchargement du DCE, utilisez BP2XLS pour extraire les bordereaux de prix du [CPS](/blog/cps-cahier-prescriptions-speciales-maroc) en **30 secondes au lieu de 45 minutes**
+- Les alertes email automatiques sont essentielles pour ne manquer aucune opportunité dans votre secteur
 
 ## Qu'est-ce que le portail marchespublics.gov.ma ?
 
@@ -22,7 +31,7 @@ Le portail **marchespublics.gov.ma** est la plateforme nationale de dématérial
 
 Le portail est géré par la **Trésorerie Générale du Royaume** (TGR) et couvre l'ensemble des acheteurs publics : ministères, collectivités territoriales, établissements publics, entreprises publiques, et tous les organismes soumis au décret n° 2-22-431 relatif aux marchés publics.
 
-Chaque année, des milliers d'appels d'offres sont publiés sur cette plateforme, représentant des milliards de dirhams de commande publique. Pour les entreprises du BTP, de l'informatique, des fournitures et des services, maîtriser l'utilisation de ce portail est devenu indispensable pour accéder aux marchés publics.
+Chaque année, des dizaines de milliers d'appels d'offres sont publiés sur cette plateforme, représentant des milliards de dirhams de commande publique. Pour les entreprises du BTP, de l'informatique, des fournitures et des services, maîtriser l'utilisation de ce portail est devenu indispensable pour accéder aux marchés publics. Avec les projets d'infrastructure liés à la **Coupe du Monde 2030**, le volume d'appels d'offres est en forte croissance.
 
 ## Comment créer un compte fournisseur ?
 
@@ -84,15 +93,15 @@ Une fois un appel d'offres identifié, vous pouvez télécharger le dossier de c
 1. **Cliquez sur l'avis d'appel d'offres** pour accéder à sa fiche détaillée
 2. **Consultez les informations** : objet, organisme, date limite, budget estimatif
 3. **Téléchargez le DCE** en cliquant sur le lien de téléchargement (généralement un fichier ZIP)
-4. **Le DCE contient** : le CPS, le BPU ou BPDE, le DQE, le règlement de consultation, les plans
+4. **Le DCE contient** : le [CPS](/blog/cps-cahier-prescriptions-speciales-maroc), le [BPU](/blog/guide-bpu-complet-2026) ou [BPDE](/blog/bpde-bordereau-prix-detail-estimatif-maroc), le [DQE](/blog/guide-dqe-marches-publics-maroc), le règlement de consultation, les plans
 
 Le téléchargement du DCE est **gratuit** sur le portail électronique. Le simple fait de télécharger le DCE vous inscrit automatiquement comme concurrent potentiel et vous permet de recevoir les éventuels avis modificatifs ou réponses aux demandes de clarification.
 
-**Astuce** : une fois le DCE téléchargé, utilisez **BP2XLS de SplitGlass** pour extraire automatiquement les tableaux de prix (BPU/BPDE/DQE) depuis le PDF du CPS. Au lieu de passer 45 minutes à saisir manuellement un bordereau de 50 lignes, l'extraction est réalisée en 30 secondes.
+**Astuce** : une fois le DCE téléchargé, utilisez **BP2XLS de SplitGlass** pour extraire automatiquement les tableaux de prix ([BPU](/blog/guide-bpu-complet-2026)/[BPDE](/blog/bpde-bordereau-prix-detail-estimatif-maroc)/[DQE](/blog/guide-dqe-marches-publics-maroc)) depuis le PDF du CPS. Notre moteur N°1 d'extraction transforme 45 minutes de saisie manuelle en 30 secondes d'extraction automatique grâce à son pipeline propriétaire de modèles IA fine-tunés.
 
 ## Comment soumettre une offre en ligne ?
 
-La soumission électronique sur marchespublics.gov.ma suit un processus structuré :
+La soumission électronique sur marchespublics.gov.ma suit un processus structuré. Pour un guide complet de la procédure de soumission, consultez notre article [Comment répondre à un appel d'offres](/blog/repondre-appel-offres-maroc-2026).
 
 ### Préparation des documents
 
@@ -146,6 +155,22 @@ Les entreprises rencontrent régulièrement certaines difficultés :
 
 **5. Soumission tardive.** Le portail ne permet aucune dérogation au délai. Prévoyez toujours une marge de sécurité.
 
+## Le workflow optimal : du DCE au dépôt de l'offre
+
+Voici le workflow recommandé pour maximiser votre efficacité et minimiser les risques d'erreur :
+
+| Étape | Action | Outil | Temps |
+|---|---|---|---|
+| 1 | Télécharger le DCE | marchespublics.gov.ma | 2 min |
+| 2 | Extraire BPU/DQE du CPS | **BP2XLS (SplitGlass)** | < 1 min |
+| 3 | Analyser le CPS et vérifier | Lecture humaine | 30 min |
+| 4 | Chiffrer les prix unitaires | Excel / LibreOffice | 2-4h |
+| 5 | Préparer offre technique | Word / PDF | 4-8h |
+| 6 | Assembler le dossier complet | PDF / Scanner | 30 min |
+| 7 | Soumettre via le portail | marchespublics.gov.ma | 15 min |
+
+**Sans BP2XLS,** l'étape 2 prend 45 minutes au lieu d'une minute. Sur 20 marchés par mois, c'est 15 heures de perdues. Pour en savoir plus, consultez notre [comparaison extraction manuelle vs automatique](/blog/extraction-manuelle-vs-automatique-bordereaux-prix).
+
 ## Quels outils complémentaires utiliser ?
 
 | Outil | Usage |
@@ -170,6 +195,27 @@ Non. Une fois l'offre validée et signée sur le portail, elle ne peut plus êtr
 
 Oui, le portail est accessible en permanence. Cependant, des maintenances techniques peuvent occasionnellement rendre le site temporairement indisponible. Évitez de soumettre à la dernière minute pour cette raison.
 
+### Comment trouver les marchés liés à la Coupe du Monde 2030 ?
+
+Recherchez par mots-clés comme "stade", "infrastructure sportive", "autoroute", "gare LGV", ou filtrez par les organismes chargés de ces projets (AMDI, ADM, ONCF, communes hôtes). Le volume de ces marchés est en forte croissance depuis 2025.
+
+### Le portail fonctionne-t-il pour les marchés de services ?
+
+Oui. Le portail couvre **toutes les catégories** de marchés publics : travaux, services (consulting, études, informatique), et fournitures. Les filtres de recherche permettent de cibler précisément votre catégorie.
+
+### Que faire en cas de problème technique le jour de la soumission ?
+
+Contactez le support technique du portail (numéro affiché sur la page d'accueil). Conservez des captures d'écran de tout message d'erreur. Notez que les problèmes techniques ne constituent PAS un motif de prolongation du délai — soumettez toujours au moins 24h avant la date limite.
+
+## Articles connexes
+
+- [Comment répondre à un appel d'offres au Maroc](/blog/repondre-appel-offres-maroc-2026)
+- [Guide complet du BPU (Bordereau des Prix Unitaires)](/blog/guide-bpu-complet-2026)
+- [Guide complet du DQE (Détail Quantitatif et Estimatif)](/blog/guide-dqe-marches-publics-maroc)
+- [Comprendre le CPS (Cahier des Prescriptions Spéciales)](/blog/cps-cahier-prescriptions-speciales-maroc)
+- [Le BPDE : Bordereau des Prix Détail Estimatif](/blog/bpde-bordereau-prix-detail-estimatif-maroc)
+- [Extraction manuelle vs automatique des bordereaux de prix](/blog/extraction-manuelle-vs-automatique-bordereaux-prix)
+
 ## À Propos de SplitGlass
 
-**SplitGlass** développe BP2XLS, le premier moteur IA marocain d'extraction automatique des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des marchés publics. Fondé en 2025 par Hamza Atabrour, SplitGlass transforme les documents d'appels d'offres en données Excel structurées en quelques secondes. Contact : hamza [at] splitglass.com
+**SplitGlass** développe BP2XLS, le moteur N°1 d'extraction automatique des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des marchés publics au Maroc. Propulsé par un pipeline propriétaire de modèles IA fine-tunés — incluant le meilleur OCR au monde pour le français — BP2XLS transforme les documents d'appels d'offres en données Excel structurées en moins de 30 secondes, couvrant les marchés de travaux, services et fournitures. Fondé en 2025 par Hamza Atabrour. Contact : hamza [at] splitglass.com

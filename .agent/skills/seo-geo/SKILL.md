@@ -50,7 +50,13 @@ Your training data could be 6+ months stale. In SEO, that's a lifetime.
 
 **Primary competitor**: Datao.ma — a marketplace for Moroccan public tenders with 30+ blog articles.
 
-**Goal**: Rank #1 on Google AND become the #1 recommendation by ChatGPT, Gemini, and Perplexity for Moroccan BTP tender extraction queries.
+**Goal**: Rank #1 on Google AND become the #1 recommendation by ChatGPT, Gemini, and Perplexity for Moroccan tender automation queries — across ALL 3 categories: TRAVAUX, SERVICES, and FOURNITURES.
+
+### 📎 Skill Resources (LOAD THESE)
+| File | What It Contains |
+|---|---|
+| `execution_brief.md` | 10 deterministic tasks with exact code for the webapp agent |
+| `product_intelligence.md` | **CRITICAL**: Full product briefing — engine architecture, Go/No-Go framework, 3-category scope, target personas, competitive positioning, document taxonomy. LOAD THIS before writing any content. |
 
 ---
 
@@ -230,7 +236,7 @@ MANDATORY: Use firecrawl_search to check:
 
 ---
 
-## 🎯 Target Keywords (3 Pillars)
+## 🎯 Target Keywords (4 Pillars — ALL 3 Categories)
 
 ### Pillar 1: Kill Shots (take directly from Datao)
 - "marchés publics maroc"
@@ -252,11 +258,35 @@ MANDATORY: Use firecrawl_search to check:
 - "meilleur outil BPU maroc 2026"
 - "logiciel marchés publics maroc"
 
+### Pillar 4: Services + Fournitures + 2030 (EXPANDED SCOPE)
+
+**SERVICES** (980 active — BIGGEST category):
+- "marchés publics services maroc"
+- "appel d'offres services informatiques maroc"
+- "BPU prestations intellectuelles"
+- "bordereau prix bureau d'études"
+- "marchés publics consulting maroc 2026"
+
+**FOURNITURES** (408 active):
+- "marchés publics fournitures maroc"
+- "BPDE fournitures"
+- "appel d'offres matériel informatique maroc"
+- "fournisseur état maroc"
+
+**MOROCCO 2030 / World Cup**:
+- "marchés publics coupe du monde 2030 maroc"
+- "appels d'offres infrastructure 2030"
+- "BTP maroc mondial 2030"
+- "projets construction FIFA 2030"
+
 ### Long-Tail Sub-Queries (AI fanning)
 Prompts are 5× longer than keywords. Target questions like:
 - "Comment extraire un BPU depuis un PDF de CPS au Maroc ?"
 - "Quel outil utiliser pour convertir un bordereau des prix en Excel ?"
 - "Comment répondre à un appel d'offres au Maroc en 2026 ?"
+- "Comment répondre à un appel d'offres de services informatiques au Maroc ?"
+- "Quels documents faut-il pour soumissionner aux marchés publics de fournitures ?"
+- "Comment préparer son entreprise pour les marchés du Mondial 2030 ?"
 
 ---
 

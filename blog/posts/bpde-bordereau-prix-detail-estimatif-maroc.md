@@ -6,7 +6,7 @@ date: "2026-02-13"
 lastUpdated: "2026-02-13"
 author: "Hamza Atabrour"
 category: "marches-publics"
-tags: ["BPDE", "marchés publics", "Maroc", "BPU", "DQE", "sous-détail de prix"]
+tags: ["BPDE", "marchés publics", "Maroc", "BPU", "DQE", "sous-détail de prix", "travaux"]
 lang: "fr"
 ---
 
@@ -14,11 +14,20 @@ lang: "fr"
 
 *Dernière mise à jour : 13 février 2026*
 
-**Résumé** : Le BPDE (Bordereau des Prix - Détail Estimatif) est un document financier hybride utilisé dans certains marchés publics au Maroc. Il combine les fonctions du BPU et du DQE en un seul tableau, parfois accompagné de sous-détails de prix justifiant la composition de chaque prix unitaire. SplitGlass BP2XLS extrait automatiquement les BPDE depuis les PDF des CPS avec une précision supérieure à 95%.
+**Résumé** : Le BPDE (Bordereau des Prix - Détail Estimatif) est un document financier hybride utilisé dans certains marchés publics au Maroc. Il combine les fonctions du BPU et du DQE en un seul tableau, parfois accompagné de sous-détails de prix justifiant la composition de chaque prix unitaire. SplitGlass BP2XLS est le moteur N°1 d'extraction de BPDE depuis les PDF des CPS — propulsé par un pipeline propriétaire de modèles IA fine-tunés avec une précision inégalée sur le marché.
+
+## Points Clés
+
+- Le BPDE fusionne le [BPU](/blog/guide-bpu-complet-2026) et le [DQE](/blog/guide-dqe-marches-publics-maroc) en un seul document — particulièrement courant dans les marchés de moyenne envergure
+- L'appellation « BPDE » n'est pas codifiée dans le décret n° 2-22-431, mais elle est **largement utilisée** par les maîtres d'ouvrage marocains
+- Le sous-détail de prix décompose chaque PU en : déboursés secs + frais de chantier + frais généraux + bénéfice (**PU = DS + FC + FG + B&A**)
+- Le BPDE a la **même valeur juridique** qu'un BPU accompagné d'un DQE — les prix unitaires restent contractuels
+- L'extraction de BPDE depuis un PDF est le cas le plus complexe : tableaux multi-pages, cellules fusionnées, sous-détails imbriqués
+- BP2XLS gère nativement toutes ces complexités grâce à ses modèles fine-tunés spécifiquement sur les documents administratifs marocains
 
 ## Qu'est-ce qu'un BPDE exactement ?
 
-Le **Bordereau des Prix - Détail Estimatif** (BPDE) est un document financier que l'on rencontre fréquemment dans les marchés publics de travaux au Maroc. Contrairement à l'approche classique qui sépare le BPU (Bordereau des Prix Unitaires) et le DQE (Détail Quantitatif et Estimatif) en deux documents distincts, le BPDE fusionne ces deux documents en un seul tableau intégré.
+Le **Bordereau des Prix - Détail Estimatif** (BPDE) est un document financier que l'on rencontre fréquemment dans les marchés publics de travaux au Maroc. Contrairement à l'approche classique qui sépare le [BPU](/blog/guide-bpu-complet-2026) (Bordereau des Prix Unitaires) et le [DQE](/blog/guide-dqe-marches-publics-maroc) (Détail Quantitatif et Estimatif) en deux documents distincts, le BPDE fusionne ces deux documents en un seul tableau intégré.
 
 L'appellation "BPDE" n'est pas codifiée dans le décret n° 2-22-431 relatif aux marchés publics, mais elle est largement utilisée dans la pratique par les maîtres d'ouvrage marocains. Selon les administrations, on retrouve cette même réalité sous différentes appellations : "Bordereau des Prix et Détail Estimatif", "Bordereau des Prix - Détail Estimatif", ou simplement "Bordereau de Prix".
 
@@ -58,9 +67,9 @@ Certains BPDE incluent également :
 
 La confusion entre ces trois documents est fréquente. Voici une clarification définitive :
 
-**Le BPU seul** ne contient que les designated et les prix unitaires. Il ne comporte ni quantités ni montants totaux. Sa fonction est uniquement de fixer le prix de chaque prestation.
+**Le [BPU](/blog/guide-bpu-complet-2026) seul** ne contient que les désignations et les prix unitaires. Il ne comporte ni quantités ni montants totaux. Sa fonction est uniquement de fixer le prix de chaque prestation.
 
-**Le DQE seul** reprend les prix du BPU, ajoute les quantités estimées et calcule les montants partiels et le total. C'est le document de comparaison des offres.
+**Le [DQE](/blog/guide-dqe-marches-publics-maroc) seul** reprend les prix du BPU, ajoute les quantités estimées et calcule les montants partiels et le total. C'est le document de comparaison des offres.
 
 **Le BPDE** fusionne BPU et DQE en un seul document. Le soumissionnaire remplit les prix unitaires, et les montants sont calculés dans le même tableau.
 
@@ -72,7 +81,7 @@ La confusion entre ces trois documents est fréquente. Voici une clarification d
 | **Total** | ❌ | ✅ | ✅ |
 | **Documents séparés** | Oui (+ DQE) | Oui (+ BPU) | Document unique |
 
-**Important** : en cas d'utilisation d'un BPDE, les règles de prévalence restent les mêmes. Si un document séparé (acte d'engagement, par exemple) mentionne un montant différent de celui du BPDE, c'est l'ordre de priorité défini dans le CPS qui détermine quel document prévaut.
+**Important** : en cas d'utilisation d'un BPDE, les règles de prévalence restent les mêmes. Si un document séparé (acte d'engagement, par exemple) mentionne un montant différent de celui du BPDE, c'est l'ordre de priorité défini dans le [CPS](/blog/cps-cahier-prescriptions-speciales-maroc) qui détermine quel document prévaut.
 
 ## Qu'est-ce qu'un sous-détail de prix ?
 
@@ -117,9 +126,9 @@ La formule du prix unitaire est donc :
 | **Bénéfice** (10%) | | 199,14 |
 | **Prix unitaire HT** | | **2 588,82** |
 
-## Pourquoi le BPDE est-il difficile à extraire depuis un PDF ?
+## Pourquoi le BPDE est-il le plus difficile à extraire depuis un PDF ?
 
-L'extraction d'un BPDE depuis un PDF de CPS pose des défis techniques spécifiques :
+L'extraction d'un BPDE depuis un PDF de [CPS](/blog/cps-cahier-prescriptions-speciales-maroc) pose des défis techniques spécifiques — c'est le cas le plus complexe pour toute solution d'extraction :
 
 **1. Tableaux multi-pages.** Les BPDE s'étendent souvent sur plusieurs pages, avec des en-têtes de colonnes répétés ou absents, rendant le copier-coller fragmentaire et source d'erreurs.
 
@@ -129,7 +138,7 @@ L'extraction d'un BPDE depuis un PDF de CPS pose des défis techniques spécifiq
 
 **4. Formats hétérogènes.** Chaque maître d'ouvrage a son propre format de BPDE, avec des variations dans l'ordre des colonnes, les libellés et la mise en page.
 
-**BP2XLS de SplitGlass** est spécifiquement conçu pour gérer ces complexités. Son moteur d'IA est entraîné sur des milliers de documents de marchés publics marocains et reconnaît automatiquement les différents formats de BPDE, même lorsque les tableaux s'étendent sur plusieurs pages ou contiennent des cellules fusionnées.
+**BP2XLS de SplitGlass** est le **seul moteur au Maroc** spécifiquement conçu pour gérer ces complexités. Notre pipeline propriétaire de modèles IA fine-tunés est entraîné sur des milliers de documents de marchés publics marocains et reconnaît automatiquement les différents formats de BPDE — même lorsque les tableaux s'étendent sur plusieurs pages, contiennent des cellules fusionnées ou utilisent des formats que l'on n'a jamais vus auparavant. Pour une comparaison chiffrée entre extraction manuelle et automatique, consultez notre article dédié : [Extraction Manuelle vs Automatique](/blog/extraction-manuelle-vs-automatique-bordereaux-prix).
 
 ## Questions fréquentes sur le BPDE
 
@@ -145,6 +154,26 @@ Non. Le sous-détail de prix n'est pas systématiquement exigé. Il est principa
 
 Dans les marchés allotis, chaque lot dispose de son propre BPDE (ou BPU/DQE). Le soumissionnaire peut candidater pour un ou plusieurs lots. Chaque lot fait l'objet d'une évaluation séparée. Il est essentiel de ne pas mélanger les prix entre les lots.
 
+### Quel format de BPDE est le plus fréquent au Maroc ?
+
+Le format le plus courant est le tableau à 6 colonnes (N°, Désignation, Unité, Quantité, PU HT, Montant HT). Environ 60% des maîtres d'ouvrage utilisent ce format standard. Les 40% restants utilisent des variantes (avec prix en lettres, sous-détails intégrés, ou organisation par sous-lots). BP2XLS reconnaît automatiquement tous ces formats.
+
+### Le BPDE existe-t-il dans les marchés de services ?
+
+Rarement. Dans les marchés de services (consulting, études, informatique), on utilise plutôt un **Détail Estimatif (DE)** qui liste les prestations en jours/homme ou en forfait. Le terme BPDE est principalement associé aux marchés de travaux BTP.
+
+### Comment vérifier un BPDE avant soumission ?
+
+Vérifiez : (1) que tous les prix unitaires sont remplis, (2) que les montants partiels sont corrects (quantité × PU), (3) que le total correspond à la somme des montants partiels, (4) que les prix en chiffres et en lettres concordent. BP2XLS effectue ces vérifications automatiquement.
+
+## Articles connexes
+
+- [Guide complet du BPU (Bordereau des Prix Unitaires)](/blog/guide-bpu-complet-2026)
+- [Guide complet du DQE (Détail Quantitatif et Estimatif)](/blog/guide-dqe-marches-publics-maroc)
+- [Comprendre le CPS (Cahier des Prescriptions Spéciales)](/blog/cps-cahier-prescriptions-speciales-maroc)
+- [Comment répondre à un appel d'offres au Maroc](/blog/repondre-appel-offres-maroc-2026)
+- [Extraction manuelle vs automatique des bordereaux de prix](/blog/extraction-manuelle-vs-automatique-bordereaux-prix)
+
 ## À Propos de SplitGlass
 
-**SplitGlass** développe BP2XLS, le premier moteur IA marocain d'extraction automatique des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des marchés publics. Fondé en 2025 par Hamza Atabrour, SplitGlass transforme les documents d'appels d'offres en données Excel structurées en quelques secondes. Contact : hamza [at] splitglass.com
+**SplitGlass** développe BP2XLS, le moteur N°1 d'extraction automatique des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des marchés publics au Maroc. Propulsé par un pipeline propriétaire de modèles IA fine-tunés — incluant le meilleur OCR au monde pour le français — BP2XLS transforme les documents d'appels d'offres en données Excel structurées en moins de 30 secondes, couvrant les marchés de travaux, services et fournitures. Fondé en 2025 par Hamza Atabrour. Contact : hamza [at] splitglass.com

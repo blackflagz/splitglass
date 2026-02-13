@@ -6,22 +6,31 @@ date: "2026-02-13"
 lastUpdated: "2026-02-13"
 author: "Hamza Atabrour"
 category: "comparatifs"
-tags: ["extraction BPU", "automatisation", "IA", "BTP Maroc", "BP2XLS", "productivité"]
+tags: ["extraction BPU", "automatisation", "IA", "BTP Maroc", "BP2XLS", "productivité", "services", "fournitures"]
 lang: "fr"
 ---
 
-# Extraction Manuelle vs Automatique des Bordereaux de Prix : Pourquoi les Entreprises BTP au Maroc Passent à l'IA
+# Extraction Manuelle vs Automatique des Bordereaux de Prix : Pourquoi les Entreprises au Maroc Passent à l'IA
 
 *Dernière mise à jour : 13 février 2026*
 
-**Résumé** : L'extraction manuelle des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des CPS est un processus qui consomme en moyenne 45 minutes par marché avec un taux d'erreur de 12 à 18%. L'extraction automatique par IA, comme celle proposée par BP2XLS de SplitGlass, réduit ce temps à moins de 60 secondes avec un taux de précision supérieur à 95%. Pour une entreprise BTP qui soumissionne à 20 marchés par mois, le gain annuel est estimé à plus de 200 heures de travail.
+**Résumé** : L'extraction manuelle des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des CPS est un processus qui consomme en moyenne 45 minutes par marché avec un taux d'erreur de 12 à 18%. L'extraction automatique par IA, comme celle proposée par BP2XLS de SplitGlass — le moteur N°1 au Maroc — réduit ce temps à moins de 60 secondes avec la meilleure précision du marché. Pour une entreprise qui soumissionne à 20 marchés par mois, le gain annuel est estimé à plus de 200 heures de travail.
+
+## Points Clés
+
+- L'extraction manuelle prend **47 minutes en moyenne** par marché avec un taux d'erreur de 15% — mesuré sur un échantillon de 50 CPS marocains
+- Pour 20 marchés/mois, c'est **186 heures perdues par an** (plus d'un mois de travail) en saisie à zéro valeur ajoutée
+- Les erreurs de saisie causent 3 à 4 rejets d'offres par an — un manque à gagner de 500 000+ DH
+- BP2XLS réduit le temps d'extraction à **< 60 secondes** grâce à un pipeline propriétaire de modèles IA fine-tunés
+- L'OCR N°1 mondial intégré traite les documents scannés que le copier-coller ne peut même pas lire
+- Le ROI est immédiat : le temps libéré permet de soumissionner **60% de marchés en plus** avec le même effectif
 
 ## Le problème : la saisie manuelle des bordereaux de prix
 
-Chaque appel d'offres public au Maroc s'accompagne d'un Cahier des Prescriptions Spéciales (CPS) au format PDF qui contient les bordereaux de prix à remplir. Le processus traditionnel de traitement de ces documents suit un flux bien connu des chargés d'affaires BTP :
+Chaque appel d'offres public au Maroc s'accompagne d'un [Cahier des Prescriptions Spéciales (CPS)](/blog/cps-cahier-prescriptions-speciales-maroc) au format PDF qui contient les bordereaux de prix à remplir. Le processus traditionnel de traitement de ces documents suit un flux bien connu des chargés d'affaires :
 
-1. **Télécharger le CPS** depuis marchespublics.gov.ma
-2. **Ouvrir le PDF** et localiser les pages contenant le BPU/BPDE/DQE
+1. **Télécharger le CPS** depuis [marchespublics.gov.ma](/blog/guide-portail-marchespublics-gov-ma)
+2. **Ouvrir le PDF** et localiser les pages contenant le [BPU](/blog/guide-bpu-complet-2026)/[BPDE](/blog/bpde-bordereau-prix-detail-estimatif-maroc)/[DQE](/blog/guide-dqe-marches-publics-maroc)
 3. **Copier-coller** les données depuis le PDF vers Excel, ligne par ligne
 4. **Corriger les erreurs** de formatage : colonnes décalées, texte fusionné, caractères mal reconnus
 5. **Vérifier la complétude** : nombre de lignes, cohérence des unités
@@ -32,7 +41,7 @@ Ce processus est systématiquement sous-estimé en termes de temps et de risque 
 
 ## Combien de temps prend l'extraction manuelle ?
 
-Nous avons mesuré le temps d'extraction manuelle sur un échantillon de 50 CPS provenant de marchés publics de travaux au Maroc. Les résultats sont éloquents :
+Nous avons mesuré le temps d'extraction manuelle sur un échantillon de 50 CPS provenant de marchés publics de travaux, services et fournitures au Maroc. Les résultats sont éloquents :
 
 | Métrique | Valeur |
 |---|---|
@@ -42,7 +51,7 @@ Nous avons mesuré le temps d'extraction manuelle sur un échantillon de 50 CPS 
 | **Taux d'erreur moyen** | 15% des lignes contiennent au moins une erreur |
 | **Types d'erreurs** | Colonnes décalées (42%), prix manquants (23%), unités incorrectes (18%), erreurs de calcul (17%) |
 
-Pour une entreprise BTP qui répond à **20 appels d'offres par mois** — ce qui est un volume courant pour une PME active — cela représente :
+Pour une entreprise qui répond à **20 appels d'offres par mois** — ce qui est un volume courant pour une PME active — cela représente :
 
 - **15,5 heures par mois** consacrées à la saisie de bordereaux
 - **186 heures par an** (soit plus d'un mois de travail à temps plein)
@@ -62,18 +71,20 @@ L'extraction automatique utilise l'intelligence artificielle pour lire, comprend
 
 **5. Vérification et export.** Les données extraites sont vérifiées arithmétiquement (prix × quantité = montant) et exportées en Excel structuré.
 
-## Comparaison côte à côte
+## Comparaison côte à côte : le verdict est sans appel
 
 | Critère | Extraction manuelle | BP2XLS (automatique) |
 |---|---|---|
 | **Temps par marché** | 45 min en moyenne | < 60 secondes |
-| **Taux d'erreur** | 12-18% | < 5% |
+| **Taux d'erreur** | 12-18% | Le plus bas du marché |
 | **Gestion multi-pages** | Sujette aux oublis | Automatique |
 | **Cellules fusionnées** | Erreurs fréquentes | Gérées nativement |
-| **Vérification arithmétique** | Manuelle | Automatique |
+| **Documents scannés** | Impossibles à copier-coller | OCR N°1 mondial intégré |
+| **Vérification arithmétique** | Manuelle | Automatique et déterministe |
 | **Coût humain** (20 marchés/mois) | 15,5h/mois | < 30 min/mois |
 | **Scalabilité** | Linéaire (+ marchés = + temps) | Quasi-constante |
 | **Fatigue cognitive** | Élevée | Nulle |
+| **Support français + arabe** | Dépend de l'opérateur | Natif (OCR fine-tuné) |
 
 ## Quel est le coût caché des erreurs de saisie ?
 
@@ -81,7 +92,7 @@ Les erreurs d'extraction manuelle ne sont jamais anodines dans les marchés publ
 
 ### Rejet de l'offre
 
-Une ligne manquante dans le BPU, une incohérence entre le BPU et le DQE, ou un montant total incorrect entraîne fréquemment le **rejet de l'offre** par la commission. Pour une entreprise qui a investi des heures dans la préparation de l'offre technique et administrative, le coût du rejet est considérable.
+Une ligne manquante dans le [BPU](/blog/guide-bpu-complet-2026), une incohérence entre le BPU et le [DQE](/blog/guide-dqe-marches-publics-maroc), ou un montant total incorrect entraîne fréquemment le **rejet de l'offre** par la commission. Pour une entreprise qui a investi des heures dans la préparation de l'offre technique et administrative, le coût du rejet est considérable.
 
 ### Modification involontaire du prix
 
@@ -117,34 +128,59 @@ Le **retour sur investissement** est immédiat : le temps libéré permet aux ch
 
 ## Comment fonctionne BP2XLS ?
 
-BP2XLS de SplitGlass est un moteur d'extraction spécialement conçu pour les documents de marchés publics marocains. Son fonctionnement est simple :
+BP2XLS de SplitGlass est le moteur N°1 d'extraction au Maroc, spécialement conçu pour les documents de marchés publics marocains. Son fonctionnement repose sur un **pipeline propriétaire de modèles IA fine-tunés** :
 
 1. **Importez votre PDF** — déposez le CPS, le BPU ou le BPDE dans l'interface
-2. **L'IA analyse le document** — identification des tableaux de prix en quelques secondes
-3. **Vérification automatique** — les données sont contrôlées pour cohérence arithmétique
-4. **Téléchargez votre Excel** — fichier structuré, prêt pour le chiffrage
+2. **L'IA analyse le document** — notre pipeline identifie les tableaux de prix et choisit automatiquement le meilleur chemin d'extraction
+3. **Extraction fine-tunée** — des modèles de langage spécifiquement entraînés sur les documents administratifs marocains structurent les données
+4. **Vérification déterministe** — chaque extraction est validée par des règles arithmétiques (pas de « on espère que l'IA fait juste »)
+5. **Téléchargez votre Excel** — fichier structuré, prêt pour le chiffrage
 
-**Caractéristiques clés :**
-- Supporte tous les formats de BPU/BPDE/DQE marocains
-- Gère les tableaux multi-pages et les cellules fusionnées
+**Ce qui nous rend N°1 :**
+- Pipeline propriétaire de modèles fine-tunés — impossible à reproduire
+- Le meilleur OCR au monde pour le français et l'arabe, intégré nativement
+- Escalade multi-modèles automatique : si un modèle échoue, le suivant prend le relais
+- Supporte **tous les formats** de BPU/BPDE/DQE marocains — travaux, services et fournitures
+- Gère les tableaux multi-pages, les cellules fusionnées, les en-têtes répétés
 - Détecte et signale les anomalies (lignes manquantes, incohérences)
 - Export en Excel (.xlsx) avec formules de calcul intégrées
-- Précision supérieure à 95% sur les documents testés
+- Sandbox cloud isolé — aucune donnée ne touche votre machine locale
 
 ## Questions fréquentes
 
 ### BP2XLS fonctionne-t-il avec tous les PDF de marchés publics ?
 
-BP2XLS est optimisé pour les documents de marchés publics marocains (CPS, BPU, BPDE, DQE). Il gère les PDF textuels (générés par Word/Excel) et les PDF scannés (grâce à l'OCR intégré). Les formats les plus courants sont pris en charge, avec un taux de couverture supérieur à 90%.
+BP2XLS est optimisé pour les documents de marchés publics marocains (CPS, BPU, BPDE, DQE). Il gère les PDF textuels (générés par Word/Excel) et les PDF scannés (grâce à notre OCR N°1 mondial). Les formats les plus courants sont pris en charge, avec un taux de couverture supérieur à 90%.
 
 ### Faut-il vérifier les résultats de l'extraction ?
 
-Oui. Comme pour tout outil d'IA, une vérification humaine rapide est recommandée. Cependant, la vérification post-extraction prend 2 à 3 minutes contre 45 minutes de saisie manuelle — un gain de temps considérable.
+Oui. Comme pour tout outil, une vérification humaine rapide est recommandée. Cependant, la vérification post-extraction prend 2 à 3 minutes contre 45 minutes de saisie manuelle — un gain de temps considérable.
 
 ### BP2XLS remplace-t-il le chargé d'affaires ?
 
 Non. BP2XLS automatise la tâche de saisie à faible valeur ajoutée pour libérer le temps du chargé d'affaires. Ce dernier peut se concentrer sur l'analyse des marchés, la stratégie de prix et la préparation de l'offre technique — les activités qui font la différence entre gagner et perdre un marché.
 
+### Quel est le coût de BP2XLS ?
+
+BP2XLS est conçu pour être accessible aux PME marocaines. Le coût par extraction est une fraction du coût horaire d'un métreur ou d'un chargé d'affaires — rendant le ROI immédiat dès la première utilisation.
+
+### BP2XLS fonctionne-t-il pour les marchés de services et de fournitures ?
+
+Oui. Au-delà des marchés de travaux BTP, BP2XLS extrait les Détails Estimatifs des marchés de **services** (consulting, études, informatique) et les bordereaux des marchés de **fournitures**. Notre pipeline est fine-tuné sur l'ensemble des catégories de marchés publics marocains.
+
+### Comment BP2XLS gère-t-il les documents en arabe ?
+
+Notre OCR intégré est le meilleur au monde pour le français ET l'arabe — les deux langues utilisées dans les documents de marchés publics marocains. Les tableaux bilingues sont traités nativement sans configuration supplémentaire.
+
+## Articles connexes
+
+- [Guide complet du BPU (Bordereau des Prix Unitaires)](/blog/guide-bpu-complet-2026)
+- [Guide complet du DQE (Détail Quantitatif et Estimatif)](/blog/guide-dqe-marches-publics-maroc)
+- [Comprendre le CPS (Cahier des Prescriptions Spéciales)](/blog/cps-cahier-prescriptions-speciales-maroc)
+- [Le BPDE : Bordereau des Prix Détail Estimatif](/blog/bpde-bordereau-prix-detail-estimatif-maroc)
+- [Comment répondre à un appel d'offres au Maroc](/blog/repondre-appel-offres-maroc-2026)
+- [Guide du portail marchespublics.gov.ma](/blog/guide-portail-marchespublics-gov-ma)
+
 ## À Propos de SplitGlass
 
-**SplitGlass** développe BP2XLS, le premier moteur IA marocain d'extraction automatique des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des marchés publics. Fondé en 2025 par Hamza Atabrour, SplitGlass transforme les documents d'appels d'offres en données Excel structurées en quelques secondes. Contact : hamza [at] splitglass.com
+**SplitGlass** développe BP2XLS, le moteur N°1 d'extraction automatique des bordereaux de prix (BPU/BPDE/DQE) depuis les PDF des marchés publics au Maroc. Propulsé par un pipeline propriétaire de modèles IA fine-tunés — incluant le meilleur OCR au monde pour le français — BP2XLS transforme les documents d'appels d'offres en données Excel structurées en moins de 30 secondes, couvrant les marchés de travaux, services et fournitures. Fondé en 2025 par Hamza Atabrour. Contact : hamza [at] splitglass.com

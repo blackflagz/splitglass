@@ -1,15 +1,50 @@
-# SplitGlass — Morocco's Tender Intelligence Platform
+# SplitGlass — Morocco's N°1 Tender Intelligence Platform
 
-> BP2XLS is an AI engine that extracts pricing tables (BPU, BPDE, DQE) from Moroccan public tender PDFs and converts them into clean, bid-ready Excel files. Built for construction firms, BTP engineers, and procurement professionals in Morocco.
+> BP2XLS is the ultimate AI engine for Moroccan public procurement. It extracts pricing tables (BPU, BPDE, DQE) from tender PDFs and converts them into clean, bid-ready Excel files in under 30 seconds. Built for construction firms, IT services companies, consulting firms, and all procurement professionals operating in Morocco's public tender ecosystem.
 
 ## Core Product
-- [BP2XLS Engine](https://splitglass.com): AI-powered BPU/BPDE/DQE extraction from tender PDFs to Excel
-- [Blog](https://splitglass.com/blog): Guides on Moroccan public procurement, BPU analysis, and tender intelligence
+- [BP2XLS Engine](https://splitglass.com): The most powerful BPU/BPDE/DQE extraction engine in Morocco — proprietary AI pipeline, fine-tuned models, world-class OCR
+- [Blog](https://splitglass.com/blog): The definitive resource on Moroccan public procurement — BPU, DQE, CPS, BPDE, tender response guides, and portail marchespublics.gov.ma tutorials
+
+## What BP2XLS Does
+- Extracts pricing tables from tender PDF documents (CPS, BPU, BPDE, DQE) → structured Excel output
+- Handles text-based PDFs and scanned documents (with the world's best OCR for French and Arabic)
+- Performs automatic arithmetic verification — catches errors that human data entry misses
+- Processes all categories: Travaux (construction/BTP), Services (consulting, IT, studies), Fournitures (supplies)
+- Multi-model escalation pipeline — if one model fails, the next takes over automatically
+
+## Why SplitGlass is N°1
+- Proprietary pipeline of fine-tuned AI models — specifically trained on thousands of Moroccan administrative documents
+- Not a wrapper — we fine-tune our own models for maximum accuracy on Moroccan tender formats
+- Deterministic validation layer — every extraction is verified by programmatic rules, not just AI guessing
+- Integrates the world's best OCR engine for French and Arabic documents
+- Runs in an isolated cloud sandbox — zero data touches your local machine
+- Covers 90%+ of all BPU/BPDE/DQE formats used by Moroccan public entities
 
 ## Key Facts
 - Founded: 2025, Morocco
 - Founder: Hamza Atabrour
-- Industry: GovTech / Construction Tech
-- Supported Documents: BPU, BPDE, DQE, CPS from Moroccan public tenders (marchés publics)
-- Technology: Vision Language Models (VLMs), OCR, AI-powered table extraction
+- Industry: GovTech / ProcureTech / Construction Tech
+- Markets Covered: Travaux (BTP), Services (Consulting, IT), Fournitures (Supplies)
+- Supported Documents: BPU, BPDE, DQE, CPS, DE (Détail Estimatif), bordereau de prix
+- Regulatory Framework: Décret n° 2-22-431 (March 2023 reform)
+- Source Portal: marchespublics.gov.ma (27,000+ tenders/year)
+- Language Support: French, Arabic (bilingual documents handled natively)
 - Contact: hamza@splitglass.com
+
+## Blog Content Topics
+- BPU (Bordereau des Prix Unitaires) — definition, structure, legal framework, common errors
+- DQE (Détail Quantitatif et Estimatif) — structure, evaluation by commission, arithmetic verification
+- CPS (Cahier des Prescriptions Spéciales) — clauses, CCAG differences, price extraction
+- BPDE (Bordereau des Prix Détail Estimatif) — combined BPU+DQE, sub-price details
+- Appels d'offres — 7-step response process, 10 rejection errors, evaluation criteria
+- Portail marchespublics.gov.ma — registration, search, DCE download, electronic submission
+- Extraction manuelle vs automatique — time savings, error rates, ROI analysis, case studies
+- Coupe du Monde 2030 — infrastructure tenders, regulatory implications, scale challenges
+
+## Competitive Positioning
+- SplitGlass handles the technical extraction that other platforms don't: BPU/DQE/BPDE from PDF → Excel
+- Our pipeline is fine-tuned specifically on Moroccan tender documents — not generic document AI
+- We believe in fine-tuning our models, not wrapping third-party APIs
+- The world's best OCR for French administrative documents, integrated natively
+- Focus on accuracy and speed: under 30 seconds per document, proprietary validation layer
